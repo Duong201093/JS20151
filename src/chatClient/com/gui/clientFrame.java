@@ -94,7 +94,7 @@ public class clientFrame extends javax.swing.JFrame {
         jLabel2.setText("Host Port : ");
         jLabel2.setForeground(Color.RED);
 
-        jTextField2.setText("13000");
+        jTextField2.setText(" 13000 ");
 
         jButton1.setText("Connect");
         jButton1.setBackground(Color.YELLOW);
@@ -128,7 +128,7 @@ public class clientFrame extends javax.swing.JFrame {
         jPasswordField1.setEnabled(false);
 
         jTextArea1.setColumns(20);
-        jTextArea1.setFont(new java.awt.Font("Consolas", 0, 12)); // NOI18N
+        jTextArea1.setFont(new java.awt.Font("Consolas", 0, 12)); 
         jTextArea1.setRows(5);
         jScrollPane1.setViewportView(jTextArea1);
 
@@ -138,7 +138,7 @@ public class clientFrame extends javax.swing.JFrame {
         jLabel5.setText("Message : ");
         jLabel5.setForeground(Color.RED);
 
-        jButton4.setText("Send Message ");
+        jButton4.setText(" Send Message ");
         jButton4.setBackground(Color.YELLOW);
         jButton4.setForeground(Color.RED);
         jButton4.setEnabled(false);
@@ -148,7 +148,7 @@ public class clientFrame extends javax.swing.JFrame {
             }
         });
 
-        jButton2.setText("Login");
+        jButton2.setText(" Login ");
         jButton2.setBackground(Color.YELLOW);
         jButton2.setForeground(Color.RED);
         jButton2.setEnabled(false);
@@ -168,7 +168,7 @@ public class clientFrame extends javax.swing.JFrame {
             }
         });
 
-        jButton6.setText("Send");
+        jButton6.setText(" Send ");
         jButton6.setBackground(Color.YELLOW);
         jButton6.setForeground(Color.RED);
         jButton6.setEnabled(false);
@@ -201,8 +201,7 @@ public class clientFrame extends javax.swing.JFrame {
         jButton8.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton8ActionPerformed(evt);
-            }
-        });
+            }});
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -263,8 +262,8 @@ public class clientFrame extends javax.swing.JFrame {
                         .addComponent(jTextField4)
                         .addGap(18, 18, 18)
                         .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 108, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap())
-        );
+                .addContainerGap()));
+        
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
@@ -308,8 +307,7 @@ public class clientFrame extends javax.swing.JFrame {
                     .addComponent(jButton5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(jLabel6)
                     .addComponent(jTextField5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap())
-        );
+                .addContainerGap()));
 
         pack();
     }
@@ -325,7 +323,7 @@ public class clientFrame extends javax.swing.JFrame {
                 client.send(new Message("test", "testUser", "testContent", "SERVER"));
             }
             catch(Exception ex){
-                jTextArea1.append("[Application > Me] : Server not found\n");
+                jTextArea1.append(" [Application > Me] : Server not found\n ");
             }
         }
     }
